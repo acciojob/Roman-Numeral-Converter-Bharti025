@@ -10,11 +10,19 @@ function convertToRoman(num) {
     };
 
   //your code here
+	let i=0;
+	let str="";
+while(num>0){
+  let last=num%10;
+ let ans=Math.pow(10,i)*last;
+	str+=obj.get(ans);
+	num=Math.floor(num/10);
+}
 
 }
-// You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
+You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
-// console.log(convertToRoman(36));
+console.log(convertToRoman(36));
 
 
 
